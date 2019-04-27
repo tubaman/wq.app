@@ -1627,7 +1627,7 @@ function _computeFilter(filter, context) {
 }
 
 function _loadFromServer(url, ui) {
-    var jqmurl = '/' + url, options = ui && ui.options || {};
+    var jqmurl = app.base_url + '/' + url, options = ui && ui.options || {};
     options.wqSkip = true;
     if (app.config.debug) {
         console.log("Loading " + url + " from server");
